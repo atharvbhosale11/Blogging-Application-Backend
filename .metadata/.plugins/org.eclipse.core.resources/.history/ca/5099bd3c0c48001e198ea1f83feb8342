@@ -1,0 +1,9 @@
+package com.codewithatharv.blog.services.impl;
+
+public interface PostService {
+
+	//create
+	Post createPost(Post)
+	
+	
+}

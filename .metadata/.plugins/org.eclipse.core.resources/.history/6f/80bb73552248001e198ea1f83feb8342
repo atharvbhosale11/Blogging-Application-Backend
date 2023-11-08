@@ -1,0 +1,25 @@
+package com.codewithatharv.blog.payloads;
+
+import java.util.Date;
+
+import com.codewithatharv.blog.entities.Category;
+import com.codewithatharv.blog.entities.User;
+
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+public class PostDto {
+
+	private String title;
+	
+	private String content;
+	
+	private String imagename;
+	
+	private Date addedDate;
+	
+	private Category category;
+	
+	private User user;
+	
+}

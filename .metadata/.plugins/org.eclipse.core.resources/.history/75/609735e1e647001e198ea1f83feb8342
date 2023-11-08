@@ -1,0 +1,53 @@
+package com.codewithatharv.blog.services.impl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.codewithatharv.blog.entities.Category;
+import com.codewithatharv.blog.payloads.CategoryDto;
+import com.codewithatharv.blog.repositories.CategoryRepo;
+import com.codewithatharv.blog.services.CategoryService;
+
+public class CategoryServiceImpl implements CategoryService{
+
+	@Autowired
+	CategoryRepo categoryRepo;
+	
+	private ModelMapper modelMapper;
+	
+	@Override
+	public CategoryDto createCategory(CategoryDto categoryDto) {
+		// TODO Auto-generated method stub
+		this.modelMapper.map(categoryDto, Category.class)
+		return null;
+	}
+
+	@Override
+	public CategoryDto UpdateCategory(CategoryDto categoryDto, Integer categoryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteCategory(Integer categoryId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public CategoryDto getCategory(Integer categoryId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<CategoryDto> getCategories() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

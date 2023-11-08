@@ -1,0 +1,35 @@
+package com.codewithatharv.blog.services;
+
+import java.util.List;
+
+import com.codewithatharv.blog.entities.Post;
+import com.codewithatharv.blog.payloads.PostDto;
+
+public interface PostService {
+
+	//create
+	Post createPost(PostDto postDto,Integer userId,Integer categoryid);
+	
+	//update
+	Post updatePost(PostDto postDto,Integer postId);
+	
+	//delete
+	void deletePost(Integer postId);
+	
+	//get all posts
+	List<Post> getAllPost();
+	
+	//get single post
+	Post getPostById(Integer postId);
+	
+	//get all post by Category
+	List<Post> getPostsByCategory(Integer categoryId);
+	
+	//get all posts by User
+	List<Post> getPostsByUser(Integer userId);
+	
+	//search posts
+	List<Post> searchPost(String keyword);
+	
+	
+}

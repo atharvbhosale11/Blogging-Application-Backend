@@ -1,0 +1,14 @@
+package com.codewithatharv.blog.payloads;
+
+import com.codewithatharv.blog.entities.Post;
+
+
+public class CommentDto {
+
+	private int id;
+	
+	private String content;
+	
+	private Post post;
+	
+}
